@@ -1,6 +1,5 @@
 package examenfinalparte2;
 
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
@@ -27,8 +26,14 @@ public class Principal {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
 
         }
+        Contador(dig);
+    }
+
+    public static void Contador(int dig) {
+        int ndig;
         /**
-         * Bucle que va a recorrer la variable int i,cada vuelta se le ira sumando a i++.
+         * Bucle que va a recorrer la variable int i,cada vuelta se le ira
+         * sumando a i++.
          */
         for (int i = 1; i <= 99999; i++) {
             int aux = i;
@@ -41,7 +46,8 @@ public class Principal {
             }
             /**
              * Se le asigna a la variable ndig el valor de la variable contador.
-             * Aqui comienzan las condiciones si se va a mostrar en pantalla o no.
+             * Aqui comienzan las condiciones si se va a mostrar en pantalla o
+             * no.
              */
             ndig = contador;
 
@@ -74,7 +80,9 @@ public class Principal {
                         }
                     }
                 }
-
+                /**
+                 * Si es igual a true, se mostrara en pantalla.
+                 */
                 if (p == true) {
                     System.out.println(i);
                 }
