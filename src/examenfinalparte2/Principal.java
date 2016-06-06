@@ -13,6 +13,8 @@ public class Principal {
     public static void main(String arg[]) {
         int dig = 2;
         int ndig = 0;
+        
+
         if (dig <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
 
@@ -21,7 +23,7 @@ public class Principal {
     }
 
     /**
-     * le pasamos el numero de digitos y va contando.
+     * Le pasamos el numero de digitos y va contando.
      * @param dig
      */
     public static void Contador(int dig) {
