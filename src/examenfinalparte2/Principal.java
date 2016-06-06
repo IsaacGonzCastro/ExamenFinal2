@@ -1,9 +1,11 @@
 package examenfinalparte2;
 
+import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
- *Clase Main del Proyecto contador.
+ * Clase Main del Proyecto contador.
+ *
  * @author igonzalezcastro
  */
 public class Principal {
@@ -11,23 +13,23 @@ public class Principal {
     public static boolean p = false;
 
     public static void main(String arg[]) {
-        int dig = 2;
+        /**
+         * Introducimos el numero de digitos.
+         */
+        int dig = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero de digitos : "));;
         int ndig = 0;
-        
 
+        /**
+         * Si es menor que 1,mostrara un error. Si es mayor que uno,entrar en el
+         * bucle.
+         */
         if (dig <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
 
         }
-        Contador(dig);
-    }
-
-    /**
-     * Le pasamos el numero de digitos y va contando.
-     * @param dig
-     */
-    public static void Contador(int dig) {
-        int ndig;
+        /**
+         * Bucle que va a recorrer la variable int i,cada vuelta se le ira sumando a i++.
+         */
         for (int i = 1; i <= 99999; i++) {
             int aux = i;
 
@@ -37,6 +39,10 @@ public class Principal {
                 aux = aux / 10;
                 contador++;
             }
+            /**
+             * Se le asigna a la variable ndig el valor de la variable contador.
+             * Aqui comienzan las condiciones si se va a mostrar en pantalla o no.
+             */
             ndig = contador;
 
             if (ndig == dig) {
@@ -75,5 +81,4 @@ public class Principal {
             }
         }
     }
-
 }
