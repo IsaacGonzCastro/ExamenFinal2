@@ -1,7 +1,9 @@
 package examenfinalparte2;
 
+import javax.swing.JOptionPane;
+
 /**
- *
+ *Clase Main del Proyecto contador.
  * @author igonzalezcastro
  */
 public class Principal {
@@ -13,11 +15,15 @@ public class Principal {
         int ndig = 0;
         if (dig <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
-            
+
         }
         Contador(dig);
     }
 
+    /**
+     * le pasamos el numero de digitos y va contando.
+     * @param dig
+     */
     public static void Contador(int dig) {
         int ndig;
         for (int i = 1; i <= 99999; i++) {
